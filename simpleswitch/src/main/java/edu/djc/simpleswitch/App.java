@@ -26,6 +26,15 @@ public class App extends Application {
     	var btn1 = new Button("Change scene");
     	
     	layout1.getChildren().addAll(btn1, text1);
+
+    	/* graphe de scène 1
+    	 * 
+    	 * VBox layout1
+    	 * |
+    	 * |---Button btn1
+    	 * |
+    	 * `---Label text1 
+    	 */
     	
     	// 2nd scene graph
     	var layout2 = new HBox();
@@ -33,6 +42,15 @@ public class App extends Application {
     	var btn2 = new Button("Change scene");
     	
     	layout2.getChildren().addAll(text2, btn2);
+    	
+    	/* graphe de scène 2
+    	 * 
+    	 * HBox layout2
+    	 * |
+    	 * |---Label text2
+    	 * |
+    	 * `---Button btn2
+    	 */
     	
     	// initial scene
     	var displaying = new Scene(layout1, WIDTH, HEIGHT);
